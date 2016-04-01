@@ -12,6 +12,8 @@ def age_convert(li):
 		try :
 			if j[1][0].lower() == 'w' :
 				age_in_weeks.append(int(j[0]))
+			elif j[1][0].lower() == 'd' :
+				age_in_weeks.append(int(j[0])/7.0)
 			elif j[1][0].lower() == 'm' :
 				age_in_weeks.append(int(j[0])*4)
 			else :
